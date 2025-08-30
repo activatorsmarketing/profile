@@ -1,0 +1,89 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", sans-serif; }
+body { background: #f9f9f9; color: #000; line-height: 1.5; }
+
+/* Titles */
+.company-name {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.section-title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px 60px;
+}
+
+/* Service Card Base */
+.service-card {
+  border-radius: 12px;
+  text-align: center;
+  padding: 40px 25px;
+  transition: all 0.3s ease;
+  min-height: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.service-card h3 {
+  margin: 20px 0 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000;
+}
+.service-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Icon Circle */
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 28px;
+  color: #fff;
+}
+
+/* Icon Colors */
+.web-icon { background: #007bff; }
+.design-icon { background: #e83e8c; }
+.devops-icon { background: #28a745; }
+.marketing-icon { background: #fd7e14; }
+
+/* Light Background Colors for Cards */
+.web-bg { background: #e6f0ff; }        /* Light Blue */
+.design-bg { background: #ffe6f1; }     /* Light Pink */
+.devops-bg { background: #e8f9f0; }     /* Light Green */
+.marketing-bg { background: #fff2e6; }  /* Light Orange */
+
+/* Hover Effect */
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .service-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .service-grid { grid-template-columns: 1fr; }
+}
+
+
